@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Adegbindin Thanyani Tinyiko, a web developer from South Africa.">
+  <title>Adegbindin Thanyani Tinyiko — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand">THANYANI<span>.</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-label">WELCOME TO MY PORTFOLIO.</div>
+      <h1>Hi, I'm <em>THANYANI.</em><br>I build for the web.</h1>
+      <div class="hero-bottom">
+        <p>
+          I am Adegbindin Thanyani Tinyiko, I build websites and practical
+          JavaScript projects with a focus on clean interfaces, useful
+          interactions and reliable input handling.
+        </p>
+        <a href="#work" class="arrow-link">See my work <span>↓</span></a>
+      </div>
+    </section>
+
+    <div class="rule container"></div>
+
+    <section class="section container about" id="about">
+      <div class="section-index">01</div>
+      <div class="section-content">
+        <p class="kicker">A little about me</p>
+        <h2>Learning by <span>building.</span></h2>
+        <div class="about-columns">
+          <p>
+            I'm a developer who enjoys turning ideas into working websites.
+            I care about how a site looks, but I care just as much about
+            whether it actually works when someone uses it.
+          </p>
+          <p>
+            My current work includes HTML, CSS and JavaScript, with projects
+            that explore responsive layouts, form handling and data validation.
+            I'm continuously adding new work and improving the projects I
+            already have.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="work">
+      <div class="section-index">02</div>
+      <div class="section-content">
+        <div class="work-heading">
+          <div>
+            <p class="kicker">Selected work</p>
+            <h2>Things I've <span>built.</span></h2>
+          </div>
+          <a class="github-link" href="https://github.com/GoFarCoding" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+
+        <article class="project">
+          <div class="project-top">
+            <span>01 / PROJECT</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3>Data Validation System</h3>
+              <p>
+                A project focused on checking user input before it is accepted.
+                It demonstrates validation rules, feedback for invalid data
+                and a more deliberate approach to handling forms.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  <br><br><hr>
+                  </div>
+                <h3>Banking System</h3>
+              <p>
+                This project is a Java Banking System connected to a MySQL database using JDBC.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              </div>
+            </div>
+            <a class="project-arrow" href="https://github.com/GoFarCoding/Data-validation-System-" target="_blank" rel="noopener noreferrer" aria-label="Open Data Validation System on GitHub">↗</a>
+          </div>
+        </article>
+
+        
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-index">03</div>
+      <div class="section-content">
+        <p class="kicker">What I work with</p>
+        <h2>My current <span>toolkit.</span></h2>
+
+        <div class="skills-list">
+          <div class="skill">
+            <span>01</span><strong>HTML</strong>
+            <p>Semantic structure and accessible page layouts.</p>
+          </div>
+          <div class="skill">
+            <span>02</span><strong>CSS</strong>
+            <p>Responsive design, layouts and interface styling.</p>
+          </div>
+          <div class="skill">
+            <span>03</span><strong>JavaScript</strong>
+            <p>DOM interaction, form logic and client-side behaviour.</p>
+          </div>
+          <div class="skill">
+            <span>04</span><strong>Data Validation</strong>
+            <p>Checking, cleaning and rejecting invalid user input.</p>
+
+          </div>
+           <div class="skill">
+            <span>05</span><strong>Python</strong>
+            <p>Building systems and desktop Applications</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact">
+      <div class="section-index">04</div>
+      <div class="section-content">
+        <p class="kicker">Get in touch</p>
+        <h2>Let's make something <span>useful.</span></h2>
+
+        <div class="contact-grid">
+          <div class="contact-intro">
+            <p>
+              Have a project, idea or opportunity you'd like to discuss?
+              Send me a message.
+            </p>
+            <a href="https://github.com/GoFarCoding" target="_blank" rel="noopener noreferrer">github.com/GoFarCoding ↗</a>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">NAME</label>
+                <input id="name" name="name" type="text" maxlength="60" autocomplete="name" placeholder="Your name">
+                <small class="error" id="nameError"></small>
+              </div>
+              <div class="field">
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com">
+                <small class="error" id="emailError"></small>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject">SUBJECT</label>
+              <input id="subject" name="subject" type="text" maxlength="100" placeholder="What is this about?">
+              <small class="error" id="subjectError"></small>
+            </div>
+
+            <div class="field">
+              <label for="message">MESSAGE</label>
+              <textarea id="message" name="message" rows="6" maxlength="1000" placeholder="Tell me a little about it..."></textarea>
+              <div class="message-meta">
+                <small class="error" id="messageError"></small>
+                <small id="counter">0 / 1000</small>
+              </div>
+            </div>
+
+            <button class="send-btn" type="submit">Send message <span>↗</span></button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© <span id="year"></span> Adegbindin Thanyani Tinyiko</span>
+    <span>Built with HTML / CSS / JS</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
